@@ -1,10 +1,11 @@
+import { AlbumDeck } from '../AlbumDeck';
 import { MainHeader } from '../MainHeader';
 
 function AlbumsPage() {
   return (
     <>
       <MainHeader />
-      <div>This is the albums page</div>
+      <AlbumDeck />
     </>
   );
 }
