@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   top: 0;
 `;
 
-const MainHeader = () => {
+const MainHeader = (): JSX.Element => {
   return (
     <StyledHeader>
       <StyledTitle>This is the title of the website</StyledTitle>

@@ -11,7 +11,7 @@ const StyledWrapper = styled.div`
   justify-content: center;
 `
 
-function HomePage() {
+const HomePage = (): JSX.Element => {
   return (
     <>
       <StyledWrapper>

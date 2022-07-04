@@ -1,6 +1,6 @@
 import { MainHeader } from '../MainHeader';
 
-function AgendaPage() {
+const AgendaPage = (): JSX.Element => {
   return (
     <>
       <MainHeader />

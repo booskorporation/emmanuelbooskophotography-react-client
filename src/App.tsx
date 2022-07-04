@@ -5,7 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import { AgendaPage } from './components/pages/AgendaPage';
 import { AboutPage } from './components/pages/AboutPage';
 import { ContactPage } from './components/pages/ContactPage';
-import { NotFound } from './components/pages/NotFound';
+import { NotFoundPage } from './components/pages/NotFoundPage';
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         <Route path='/agenda' element={<AgendaPage />} />
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Routes>
   );
 }

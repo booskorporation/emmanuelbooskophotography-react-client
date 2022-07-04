@@ -1,6 +1,6 @@
 import { MainHeader } from '../MainHeader';
 
-function NotFound() {
+const NotFoundPage = (): JSX.Element => {
   return (
     <>
       <MainHeader />
@@ -9,4 +9,4 @@ function NotFound() {
   );
 }
 
-export { NotFound };
+export { NotFoundPage };

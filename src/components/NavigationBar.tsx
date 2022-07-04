@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { StyledNavigationLink } from "./StyledNavigationLink";
-import { navLinks } from "../config/navLinks"
+import { linksConfig } from "../config/navLinks"
 
 interface IStyledNavigationLinkList {
   length: number;
@@ -13,11 +13,12 @@ const StyledNavigationLinkList = styled.ul<IStyledNavigationLinkList>`
   justify-items: center;
 `;
 
-const NavigationBar = () => {
+const NavigationBar = (): JSX.Element => {
+  const { navigationLinks } = linksConfig;
   return (
     <StyledNavBar>
-      <StyledNavigationLinkList length={navLinks.length}>
-        { navLinks.map((link) => 
+      <StyledNavigationLinkList length={navigationLinks.length}>
+        { navigationLinks.map((link) => 
           <StyledNavigationLink 
             to={link.to} 
             key={link.to}

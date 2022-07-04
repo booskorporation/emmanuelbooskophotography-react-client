@@ -1,6 +1,6 @@
 import { MainHeader } from '../MainHeader';
 
-function AlbumsPage() {
+const AlbumsPage = (): JSX.Element => {
   return (
     <>
       <MainHeader />

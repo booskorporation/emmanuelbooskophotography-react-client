@@ -1,6 +1,6 @@
 import { MainHeader } from '../MainHeader';
 
-function AboutPage() {
+const AboutPage = (): JSX.Element => {
   return (
     <>
       <MainHeader />

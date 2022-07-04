@@ -1,6 +1,6 @@
 import { ILink } from "../types/types"
 
-const navLinks: Array<ILink> = [
+const navigationLinks: ILink[] = [
   {
     to: "/",
     text: "Home",
@@ -21,6 +21,6 @@ const navLinks: Array<ILink> = [
     to: "/contact",
     text: "Contact"
   },
-]
+];
 
-export { navLinks }
+export const linksConfig = { navigationLinks } as const;

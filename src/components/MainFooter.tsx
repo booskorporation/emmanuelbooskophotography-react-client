@@ -6,7 +6,7 @@ const StyledFooter = styled.footer`
   background-color: #e2e8f0;
 `;
 
-function MainFooter() {
+const MainFooter = (): JSX.Element => {
   return (
     <StyledFooter>
       This is the footer
