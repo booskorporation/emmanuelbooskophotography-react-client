@@ -1,6 +1,7 @@
 import { StyledTitle } from '../StyledTitle';
 import { NavigationBar } from '../NavigationBar';
 import styled from 'styled-components';
+import { MainFooter } from '../MainFooter';
 
 const StyledWrapper = styled.div`
   min-height: 100vh;
@@ -12,10 +13,13 @@ const StyledWrapper = styled.div`
 
 function HomePage() {
   return (
-    <StyledWrapper>
-      <StyledTitle>This is the home page</StyledTitle>
-      <NavigationBar />
-    </StyledWrapper>
+    <>
+      <StyledWrapper>
+        <StyledTitle>This is the home page</StyledTitle>
+        <NavigationBar />
+      </StyledWrapper>
+      <MainFooter />
+    </>
   );
 }
 
