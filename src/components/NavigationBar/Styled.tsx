@@ -3,9 +3,11 @@ import { NavLink } from "react-router-dom";
 
 interface IStyledLinks {
   length: number;
-}
+};
 
-const StyledNavigationBar = styled.nav``;
+const StyledNavigationBar = styled.nav`
+  padding: 0.125rem;
+`;
 
 const StyledNavigationLinks = styled.ul<IStyledLinks>`
   display: grid;
@@ -27,6 +29,6 @@ const StyledNavigationLink = styled(NavLink)`
   &.active {
     background-color: #d9f99d;
   }
-`
+`;
 
 export { StyledNavigationBar, StyledNavigationLinks, StyledNavigationLink };

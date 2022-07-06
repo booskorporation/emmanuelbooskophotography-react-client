@@ -6,6 +6,6 @@ const NavigationBarWithConfig = (): JSX.Element => {
   return (
     <NavigationBar navigationLinks={ navigationLinks } />
   )
-  };
+};
 
 export { NavigationBarWithConfig };

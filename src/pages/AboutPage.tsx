@@ -1,12 +1,10 @@
-import { MainHeader } from '../components/MainHeader';
+import { MainHeader } from '../components/MainHeader/MainHeader';
 
-const AboutPage = (): JSX.Element => {
-  return (
-    <>
-      <MainHeader />
-      <div>This is the about page</div>
-    </>
-  );
-}
+const AboutPage = (): JSX.Element => (
+  <>
+    <MainHeader />
+    <div>This is the about page</div>
+  </>
+);
 
 export { AboutPage };

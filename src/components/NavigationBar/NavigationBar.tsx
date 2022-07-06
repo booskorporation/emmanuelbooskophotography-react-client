@@ -3,7 +3,7 @@ import { ILink } from "../../types/types";
 
 interface IProps {
   navigationLinks: ILink[];
-}
+};
 
 const NavigationBar = ({ navigationLinks }: IProps): JSX.Element => (
   <StyledNavigationBar>

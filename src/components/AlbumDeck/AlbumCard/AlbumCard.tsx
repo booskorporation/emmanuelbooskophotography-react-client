@@ -3,16 +3,14 @@ import { IAlbum } from "../../../types/types";
 
 interface IProps {
   album: IAlbum;
-}
+};
 
-function AlbumCard({ album }: IProps) {
-  return (
-    <StyledAlbumCard thumbnail={ album.thumbnail }>
-      <StyledAlbumCardTitle>
-        { album.title }
-      </StyledAlbumCardTitle>
-    </StyledAlbumCard>
-  );
-}
+const AlbumCard = ({ album }: IProps): JSX.Element => (
+  <StyledAlbumCard thumbnail={ album.thumbnail }>
+    <StyledAlbumCardTitle>
+      { album.title }
+    </StyledAlbumCardTitle>
+  </StyledAlbumCard>
+);
 
 export { AlbumCard };

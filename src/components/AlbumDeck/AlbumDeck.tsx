@@ -4,7 +4,7 @@ import { IAlbum } from "../../types/types";
 
 interface IProps {
   albums: IAlbum[];
-}
+};
 
 const AlbumDeck = ({ albums }: IProps): JSX.Element => (
   <StyledAlbumDeck>

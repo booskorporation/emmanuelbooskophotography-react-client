@@ -1,13 +1,11 @@
-import { MainHeader } from '../components/MainHeader';
+import { MainHeader } from '../components/MainHeader/MainHeader';
 import { AlbumDeckWithConfig as AlbumDeck } from '../components/AlbumDeck';
 
-const AlbumsPage = (): JSX.Element => {
-  return (
-    <>
-      <MainHeader />
-      <AlbumDeck />
-    </>
-  );
-}
+const AlbumsPage = (): JSX.Element => (
+  <>
+    <MainHeader />
+    <AlbumDeck />
+  </>
+);
 
 export { AlbumsPage };

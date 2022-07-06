@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 interface IStyledAlbumCardProps {
   thumbnail?: string;
-}
+};
 
 const StyledAlbumCardTitle = styled.h3`
   padding: 1rem;
@@ -19,7 +19,7 @@ const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
     color: white;
     background: rgba(0, 0, 0, 0.7);
   }
-`
+`;
 
 const StyledAlbumCard = styled.li<IStyledAlbumCardProps>`
   background-color: #e2e8f0;
