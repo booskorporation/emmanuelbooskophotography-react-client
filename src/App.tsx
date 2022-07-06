@@ -1,11 +1,11 @@
-import React from 'react';
-import { HomePage } from './components/pages/HomePage';
-import { AlbumsPage } from './components/pages/AlbumsPage';
 import { Routes, Route } from 'react-router-dom';
-import { AgendaPage } from './components/pages/AgendaPage';
-import { AboutPage } from './components/pages/AboutPage';
-import { ContactPage } from './components/pages/ContactPage';
-import { NotFoundPage } from './components/pages/NotFoundPage';
+
+import { HomePage } from './pages/HomePage';
+import { AlbumsPage } from './pages/AlbumsPage';
+import { AgendaPage } from './pages/AgendaPage';
+import { AboutPage } from './pages/AboutPage';
+import { ContactPage } from './pages/ContactPage';
+import { NotFoundPage } from './pages/NotFoundPage';
 
 function App() {
   return (
