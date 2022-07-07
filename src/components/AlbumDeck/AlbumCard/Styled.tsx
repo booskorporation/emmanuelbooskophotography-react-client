@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 interface IStyledAlbumCardProps {
   thumbnail?: string;
-};
+}
 
 const StyledAlbumCardTitle = styled.h3`
   padding: 1rem;
@@ -11,7 +11,7 @@ const StyledAlbumCardTitle = styled.h3`
 
 const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
   &:hover {
-    background-image: url(${props => props.thumbnail});
+    background-image: url(${(props) => props.thumbnail});
     background-repeat: no-repeat;
   }
 
@@ -34,7 +34,7 @@ const StyledAlbumCard = styled.li<IStyledAlbumCardProps>`
     transform: scale(1.025);
   }
 
-  ${props => props.thumbnail && cssAlbumCardWithThumbnail }
+  ${(props) => props.thumbnail && cssAlbumCardWithThumbnail}
 `;
 
 export { StyledAlbumCardTitle, StyledAlbumCard };

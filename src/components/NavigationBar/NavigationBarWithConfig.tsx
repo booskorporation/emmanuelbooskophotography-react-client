@@ -1,11 +1,11 @@
-import { NavigationBar } from "./NavigationBar";
-import { linksConfig } from "../../config/navLinks";
+import { NavigationBar } from './NavigationBar';
+import { linksConfig } from '../../config/navLinks';
 
 const NavigationBarWithConfig = (): JSX.Element => {
   const { navigationLinks } = linksConfig;
   return (
-    <NavigationBar navigationLinks={ navigationLinks } />
-  )
+    <NavigationBar navigationLinks={navigationLinks} />
+  );
 };
 
 export { NavigationBarWithConfig };

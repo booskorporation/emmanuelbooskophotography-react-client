@@ -1,5 +1,5 @@
-import { MainFooter } from "../components/MainFooter";
-import { MainHero } from "../components/MainHero/MainHero";
+import { MainFooter } from '../components/MainFooter';
+import { MainHero } from '../components/MainHero/MainHero';
 
 const HomePage = (): JSX.Element => (
   <>

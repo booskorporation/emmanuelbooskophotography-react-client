@@ -1,10 +1,10 @@
-import { StyledAlbumDeck } from "./Styled";
-import { AlbumCard } from "./AlbumCard";
-import { IAlbum } from "../../types/types";
+import { StyledAlbumDeck } from './Styled';
+import { AlbumCard } from './AlbumCard';
+import { IAlbum } from '../../types/types';
 
 interface IProps {
   albums: IAlbum[];
-};
+}
 
 const AlbumDeck = ({ albums }: IProps): JSX.Element => (
   <StyledAlbumDeck>

@@ -1,9 +1,9 @@
-import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 interface IStyledLinks {
   length: number;
-};
+}
 
 const StyledNavigationBar = styled.nav`
   padding: 0.125rem;
@@ -11,7 +11,7 @@ const StyledNavigationBar = styled.nav`
 
 const StyledNavigationLinks = styled.ul<IStyledLinks>`
   display: grid;
-  grid-template-columns: repeat(${props => props.length}, 1fr);
+  grid-template-columns: repeat(${(props) => props.length}, 1fr);
   justify-items: center;
 `;
 

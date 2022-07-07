@@ -1,10 +1,10 @@
-import { AlbumDeck } from "./AlbumDeck";
-import { albumsConfig } from "../../config/albums";
+import { AlbumDeck } from './AlbumDeck';
+import { albumsConfig } from '../../config/albums';
 
 const AlbumDeckWithConfig = (): JSX.Element => {
   const { albums } = albumsConfig;
   return (
-    <AlbumDeck albums={ albums } />
+    <AlbumDeck albums={albums} />
   );
 };
 
