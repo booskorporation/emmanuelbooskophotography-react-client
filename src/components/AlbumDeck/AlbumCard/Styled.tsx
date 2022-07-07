@@ -1,9 +1,13 @@
 import styled, { css } from "styled-components";
-import { IAlbum } from "../types/types";
 
 interface IStyledAlbumCardProps {
   thumbnail?: string;
-}
+};
+
+const StyledAlbumCardTitle = styled.h3`
+  padding: 1rem;
+  text-align: center;
+`;
 
 const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
   &:hover {
@@ -11,11 +15,11 @@ const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
     background-repeat: no-repeat;
   }
 
-  &:hover h3 {
+  &:hover ${StyledAlbumCardTitle} {
     color: white;
     background: rgba(0, 0, 0, 0.7);
   }
-`
+`;
 
 const StyledAlbumCard = styled.li<IStyledAlbumCardProps>`
   background-color: #e2e8f0;
@@ -33,23 +37,4 @@ const StyledAlbumCard = styled.li<IStyledAlbumCardProps>`
   ${props => props.thumbnail && cssAlbumCardWithThumbnail }
 `;
 
-const StyledAlbumCardTitle = styled.h3`
-  padding: 1rem;
-  text-align: center;
-`;
-
-interface IProps {
-  album: IAlbum;
-}
-
-function AlbumCard({ album }: IProps) {
-  return (
-    <StyledAlbumCard thumbnail={ album.thumbnail }>
-      <StyledAlbumCardTitle>
-        { album.title }
-      </StyledAlbumCardTitle>
-    </StyledAlbumCard>
-  );
-}
-
-export { AlbumCard };
+export { StyledAlbumCardTitle, StyledAlbumCard };

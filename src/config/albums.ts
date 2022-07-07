@@ -1,4 +1,4 @@
-import { IAlbum } from "../types/types"
+import { IAlbum } from "../types/types";
 
 const albums: IAlbum[] = [
   {

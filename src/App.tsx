@@ -1,23 +1,18 @@
-import React from 'react';
-import { HomePage } from './components/pages/HomePage';
-import { AlbumsPage } from './components/pages/AlbumsPage';
-import { Routes, Route } from 'react-router-dom';
-import { AgendaPage } from './components/pages/AgendaPage';
-import { AboutPage } from './components/pages/AboutPage';
-import { ContactPage } from './components/pages/ContactPage';
-import { NotFoundPage } from './components/pages/NotFoundPage';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-function App() {
-  return (
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/albums' element={<AlbumsPage />} />
-        <Route path='/agenda' element={<AgendaPage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/contact' element={<ContactPage />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>
-  );
-}
+import { HomePage, AlbumsPage, AgendaPage, AboutPage, ContactPage, NotFoundPage } from "./pages"
+
+const App = (): JSX.Element => (
+  <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/albums' element={<AlbumsPage />} />
+      <Route path='/agenda' element={<AgendaPage />} />
+      <Route path='/about' element={<AboutPage />} />
+      <Route path='/contact' element={<ContactPage />} />
+      <Route path='*' element={<NotFoundPage />} />
+    </Routes>
+  </BrowserRouter>
+);
 
 export default App;

@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 interface IProps {
   disabled?: boolean;
-}
+};
 
 const cssDisabled = css`
   cursor: not-allowed;
@@ -12,7 +12,7 @@ const cssDisabled = css`
   &:hover {
     background-color: #737373;
   }
-`
+`;
 
 const StyledButton = styled.button<IProps>`
   cursor: pointer;
@@ -31,6 +31,6 @@ const StyledButton = styled.button<IProps>`
   ${props => 
     props.disabled && cssDisabled
   }
-`
+`;
 
 export { StyledButton };
