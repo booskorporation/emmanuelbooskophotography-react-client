@@ -1,5 +1,5 @@
-import { StyledHeader, StyledHeaderTitle } from "./Styled";
-import { NavigationBarWithConfig as NavigationBar } from "../NavigationBar";
+import { StyledHeader, StyledHeaderTitle } from './Styled';
+import { NavigationBarWithConfig as NavigationBar } from '../NavigationBar';
 
 const MainHeader = (): JSX.Element => (
   <StyledHeader>

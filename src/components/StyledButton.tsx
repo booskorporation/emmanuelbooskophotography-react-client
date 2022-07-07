@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components';
 
 interface IProps {
   disabled?: boolean;
-};
+}
 
 const cssDisabled = css`
   cursor: not-allowed;
@@ -28,9 +28,8 @@ const StyledButton = styled.button<IProps>`
     background-color: #1e40af;
   }
 
-  ${props => 
-    props.disabled && cssDisabled
-  }
+  ${(props) => props.disabled && cssDisabled
+}
 `;
 
 export { StyledButton };

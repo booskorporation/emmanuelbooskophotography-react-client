@@ -1,4 +1,4 @@
-import { StyledMainFooter } from "./Styled";
+import { StyledMainFooter } from './Styled';
 
 const MainFooter = (): JSX.Element => (
   <StyledMainFooter>

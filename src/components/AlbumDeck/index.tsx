@@ -1,3 +1,3 @@
-export { AlbumCard } from "./AlbumCard";
-export { AlbumDeck } from "./AlbumDeck";
-export { AlbumDeckWithConfig } from "./AlbumDeckWithConfig";
+export { AlbumCard } from './AlbumCard';
+export { AlbumDeck } from './AlbumDeck';
+export { AlbumDeckWithConfig } from './AlbumDeckWithConfig';
