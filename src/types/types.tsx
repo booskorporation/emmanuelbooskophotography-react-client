@@ -9,3 +9,8 @@ export interface IAlbum {
   title: string;
   thumbnail?: string;
 }
+
+export interface IImage {
+  id: string;
+  path: string;
+}

@@ -4,6 +4,7 @@ const StyledHeader = styled.header`
   width: 100%;
   position: sticky;
   top: 0;
+  z-index: 100;
 `;
 
 const StyledHeaderTitle = styled.h1`

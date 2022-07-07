@@ -7,6 +7,7 @@ interface IStyledLinks {
 
 const StyledNavigationBar = styled.nav`
   padding: 0.125rem;
+  background-color: #fff;
 `;
 
 const StyledNavigationLinks = styled.ul<IStyledLinks>`

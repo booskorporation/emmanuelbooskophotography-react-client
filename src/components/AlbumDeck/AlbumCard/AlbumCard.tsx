@@ -6,7 +6,7 @@ interface IProps {
 }
 
 const AlbumCard = ({ album }: IProps): JSX.Element => (
-  <StyledAlbumCard thumbnail={album.thumbnail}>
+  <StyledAlbumCard to={`${album.id}`} thumbnail={album.thumbnail}>
     <StyledAlbumCardTitle>
       { album.title }
     </StyledAlbumCardTitle>

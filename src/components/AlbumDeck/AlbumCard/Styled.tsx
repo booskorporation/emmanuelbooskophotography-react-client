@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { Link } from 'react-router-dom';
 
 interface IStyledAlbumCardProps {
   thumbnail?: string;
@@ -21,7 +22,7 @@ const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
   }
 `;
 
-const StyledAlbumCard = styled.li<IStyledAlbumCardProps>`
+const StyledAlbumCard = styled(Link)<IStyledAlbumCardProps>`
   background-color: #e2e8f0;
   list-style: none;
   cursor: pointer;
