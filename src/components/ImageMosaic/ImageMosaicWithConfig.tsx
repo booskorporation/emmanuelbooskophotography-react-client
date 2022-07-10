@@ -4,7 +4,7 @@ import { albumsConfig } from '../../config/albums';
 
 const ImageMosaicWithConfig = (): JSX.Element => {
   const { images } = albumsConfig;
-  const { albumId } = useParams();
+  const { albumId } = useParams<{ albumId: string; }>();
   return (
     <ImageMosaic images={images} albumId={albumId} />
   );

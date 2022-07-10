@@ -3,7 +3,7 @@ import { IImage } from '../../types/types';
 
 interface IProps {
   images: IImage[];
-  albumId: string | undefined;
+  albumId: string;
 }
 
 const ImageMosaic = ({ images, albumId }: IProps): JSX.Element => (
