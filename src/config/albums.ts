@@ -1,20 +1,9 @@
-import { IAlbum } from '../types/types';
+import { generateImages } from '../factories/imageFactory';
+import { generateAlbums } from '../factories/albumFactory';
+import { IAlbum, IImage } from '../types/types';
 
-const albums: IAlbum[] = [
-  {
-    id: '1',
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, pariatur.',
-    thumbnail: 'https://picsum.photos/400/200',
-  },
-  {
-    id: '2',
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, pariatur.',
-  },
-  {
-    id: '3',
-    title: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, pariatur.',
-    thumbnail: 'https://picsum.photos/400/200',
-  },
-];
+const albums: IAlbum[] = generateAlbums(5);
 
-export const albumsConfig = { albums } as const;
+const images: IImage[] = generateImages(28);
+
+export const albumsConfig = { albums, images } as const;
