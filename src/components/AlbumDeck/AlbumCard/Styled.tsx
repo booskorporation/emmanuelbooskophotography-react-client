@@ -6,8 +6,9 @@ interface IStyledAlbumCardProps {
 }
 
 const StyledAlbumCardTitle = styled.h3`
-  padding: 1rem;
+  padding: var(--step-0);
   text-align: center;
+  color: var(--clr-primary);
 `;
 
 const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
@@ -17,23 +18,19 @@ const cssAlbumCardWithThumbnail = css<IStyledAlbumCardProps>`
   }
 
   &:hover ${StyledAlbumCardTitle} {
-    color: white;
-    background: rgba(0, 0, 0, 0.7);
+    color: var(--white);
+    background-color: var(--clr-primary-opacity);
   }
 `;
 
 const StyledAlbumCard = styled(Link)<IStyledAlbumCardProps>`
-  background-color: #e2e8f0;
+  background-color: var(--fg);
   list-style: none;
   cursor: pointer;
   width: 400px;
   height: 200px;
-  border-radius: 1rem;
-  box-shadow: 0.125rem 0.125rem 0.5rem gray;
-
-  &:hover {
-    transform: scale(1.025);
-  }
+  text-decoration: none;
+  border: 2px solid var(--clr-secondary);
 
   ${(props) => props.thumbnail && cssAlbumCardWithThumbnail}
 `;

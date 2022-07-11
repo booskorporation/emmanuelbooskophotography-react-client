@@ -5,6 +5,7 @@ const variables = css`
     --white: #fff;
     --black: #222;
     --clr-primary: #002040;
+    --clr-primary-opacity: #002040c0;
     --clr-secondary: #b8860b;
     --bg: #eee;
     --fg: #fff;
