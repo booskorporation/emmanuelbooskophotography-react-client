@@ -1,12 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 import { reset } from './reset';
+import { variables } from './variables';
 
 const GlobalStyle = createGlobalStyle`
   ${reset}
+  ${variables};
 
   body {
-    background-color: #eee;
-    color: #002040;
+    min-height: 100%;
+    background-color: var(--bg);
+    font-size: var(--step-0);
+    color: var(--clr-primary);
   }
 `;
 

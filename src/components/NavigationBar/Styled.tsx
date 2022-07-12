@@ -6,29 +6,34 @@ interface IStyledLinks {
 }
 
 const StyledNavigationBar = styled.nav`
-  padding: 0.125rem;
-  background-color: #fff;
+  background-color: var(--white);
 `;
 
 const StyledNavigationLinks = styled.ul<IStyledLinks>`
   display: grid;
   grid-template-columns: repeat(${(props) => props.length}, 1fr);
-  justify-items: center;
+  justify-items: stretch;
 `;
 
 const StyledNavigationLink = styled(NavLink)`
-  color: black;
-  font-weight: bold;
-  font-size: 1.75rem;
-  padding: 1rem 2rem;
+  font-size: var(--step-1);
   text-decoration: none;
+  text-align: center;
+  padding: var(--step--2) var(--step-2);
 
   &:hover {
-    background-color: #ddd;
+    background-color: var(--bg);
+    color: var(--white);
   }
 
-  &.active {
-    background-color: #d9f99d;
+  &.active,
+  &:visited.active {
+    background-color: var(--clr-secondary);
+    color: var(--white);
+  }
+
+  &:visited {
+    color: var(--clr-primary);
   }
 `;
 

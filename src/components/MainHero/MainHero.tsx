@@ -3,7 +3,7 @@ import { NavigationBarWithConfig as NavigationBar } from '../NavigationBar';
 
 const MainHero = (): JSX.Element => (
   <StyledHeroWrapper>
-    <StyledHeroTitle>This is the home page</StyledHeroTitle>
+    <StyledHeroTitle>Lorem, ipsum dolor.</StyledHeroTitle>
     <NavigationBar />
   </StyledHeroWrapper>
 );
